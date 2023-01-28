@@ -1,0 +1,32 @@
+
+
+.child-one-relative {
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+.child-one-absolute {
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+.parent {
+    padding: 5px;
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+.child {
+    padding: 5px;
+    background-color: rgb(9, 255, 0);
+    border: 1px solid black
+}
