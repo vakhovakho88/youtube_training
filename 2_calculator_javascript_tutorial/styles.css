@@ -1,0 +1,85 @@
+/* 
+The ::before selector inserts something before the content of each selected element(s).
+Use the content property to specify the content to insert.
+Use the ::after selector to insert something after the content. 
+
+box-sizing: The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+*/
+
+*,*::after, *::before {
+    box-sizing: border-box;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+/* linear-gradient: from one color to anpther color */
+body {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, #00AAFF, #00FF6C)
+
+}
+
+/* grid ist just gridview*/
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    /* it fills everytime 100% of the height */
+    min-height: 100vh;
+    /* 4 columns with 100px width  */
+    grid-template-columns: repeat(4,100px);
+    /*5 rows with 100px height, */
+    /* min 120 max auto */
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+
+
+}
+
+/* outline: comes from browsers to buttons, blue borders */
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border:1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+
+}
+
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+/* make the elements to locate 2 columns */
+.span-two {
+  grid-column: span 2;  
+}
+
+.output {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+
+    /* https://www.w3schools.com/css/css3_flexbox.asp */
+    display: flex;
+    align-items: flex-end;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap */
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}

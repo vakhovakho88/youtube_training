@@ -1,0 +1,18 @@
+https://www.youtube.com/watch?v=fsCjFHuMXj0
+
+npm install
+
+npm install -save express mongodb body_parser
+
+npm install --save-dev nodemon
+    nodemon restarts our server ehrn file is changed
+
+
+    "dev": "nodemon server.js"
+
+
+
+
+    mongodb: vakhovakho88
+    mlab.com
+    

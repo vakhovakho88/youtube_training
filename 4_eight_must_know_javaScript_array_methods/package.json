@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "nodemon array_methods.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
