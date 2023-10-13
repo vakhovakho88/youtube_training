@@ -1,0 +1,31 @@
+- You can drag and drop a folder to visual Studio code and it will open it as a project
+- npm create vite@latest client creates a dialog to create a project
+- Then we choose React  and Javascript + SWC
+- it creates client folder with react content inside
+- then we change to directory client
+- and use: npm i    and it installs all dependencies from json
+- WHats is vite?
+- What is client folder?
+- what is tailwind CSS
+- We install tailwindcss with vite (https://tailwindcss.com/docs/guides/vite) 
+- We use the instructions from this page
+- we run in client folder: npm install -D tailwindcss postcss autoprefixer
+- the next part that initialises config files: npx tailwindcss init -p 
+  - postcss.config.js
+  - tailwind.config.js
+
+- We dont need app.css here
+- Extension: (ES7+ React/Redux/React-Native snippets) to see suggestions und much more..
+- rfc : to create boilerplate for react functional component
+- Extension: Auto Rename Tag
+  - Renames an end tag if we have renamed the initial tag and oppositely too.
+- Extension: Console Ninja
+  - Allows us Console Outputs in Termninal instead of browser
+- Extension: Pretier 
+  - When we save a code it makes it autoformat
+- Extension :Tailwind CSS InteliSence
+  - For auto suggestions and etc
+- clear: clears the console
+- run the app: npm run dev
+https://www.youtube.com/watch?v=VAaUy_Moivw&list=WL&index=1&t=1944s
+16.48
